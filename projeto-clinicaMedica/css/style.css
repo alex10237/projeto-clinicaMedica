@@ -179,8 +179,8 @@ main .recepcao {
 .contato-content {
   margin: 0 auto;
   max-width: 1024px;
-  line-height: 2.0rem;
   text-align: center;
+  line-height: 2.0rem;
 }
 
 iframe {
@@ -191,7 +191,13 @@ iframe {
 
 /* INÍCIO RODAPÉ */
 .footer {
-  background-color: #0d6e71;
+  color: #fff;
   display: flex;
+  max-width: 1024;
+  padding: 30px;
+  line-height: 30px;
+  text-align: center;
+  justify-content: center;
+  background-color: #0d6e71;
 }
 /* FIM RODAPÉ */
