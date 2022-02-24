@@ -1,3 +1,49 @@
-* {
-  background-color: #ccc;
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+/* AJUSTE DO CABEÇALHO DO SITE */
+header{
+  background-color: #00cad1;
+}
+
+#topo { 
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.links-topo {
+  margin-left: 15px;
+  padding: 10px;
+}
+
+.links-topo ul {
+  display: flex;
+}
+
+.links-topo ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.links-topo a {
+  color: #fff;
+  text-decoration: none;
+}
+/* FIM AJUSTE CABEÇALHO DO SITE */
+
+main .recepcao {
+  background-image: url(../assets/img/recepcao2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
 }
