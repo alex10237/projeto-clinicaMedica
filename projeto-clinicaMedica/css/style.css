@@ -90,12 +90,9 @@ main .recepcao {
 
 .sobre-lista {
   color: gray;
-  /* margin: 0 auto; */
-}
-
-.sobre-lista h2, .sobre-lista ul {
-  float: right;
-  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sobre-lista ul {
@@ -105,6 +102,96 @@ main .recepcao {
 
 .sobre-lista h2 {
   font-weight: normal;
+  text-transform: uppercase;
 }
 
+.sobre-lista img {
+  width: 25%;
+}
+/* FIM DO CONTEÚDO SOBRE */
 
+/* INÍCIO CONTEÚDO ESPECIALIDADES */
+.especialidades {
+  color: gray;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.titulo-especialidades {
+  display: flex;
+  margin-top: 50px;
+  font-size: 1.2rem;
+  text-align: center;
+  flex-direction: column;
+  padding: 30px 30px 30px 30px;
+}
+
+.cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 30%;
+  box-shadow: 1px 1px 10px grey;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: #CCC;
+}
+
+.card img{
+  width: 100%;
+}
+
+.card p {
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.link-horarios {
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.link-horarios a {
+  width: 110px;
+  color: #fff;
+  padding: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  background-color: #00cad1;
+  border: 1px solid #00cad1;
+  border-radius: 2px 2px;
+}
+/* FIM CONTEÚDO ESPECIALIDADES */
+
+/* INÍCO CONTEÚDO CONTATO */
+#contato {
+  color: gray;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.contato-content {
+  margin: 0 auto;
+  max-width: 1024px;
+  line-height: 2.0rem;
+  text-align: center;
+}
+
+iframe {
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+/* FIM CONTEÚDO CONTATO */
+
+/* INÍCIO RODAPÉ */
+.footer {
+  background-color: #0d6e71;
+  display: flex;
+}
+/* FIM RODAPÉ */
