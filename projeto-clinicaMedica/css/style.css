@@ -13,15 +13,17 @@ header{
 }
 
 #topo { 
-  max-width: 1024px;
+  height: 8vh;
   display: flex;
-  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 1024px;
   align-items: center;
+  justify-content: space-between;
 }
 
 .links-topo {
-  margin-left: 15px;
   padding: 10px;
+  margin-left: 15px;
 }
 
 .links-topo ul {
@@ -29,8 +31,8 @@ header{
 }
 
 .links-topo ul li {
-  list-style: none;
   margin: 0 10px;
+  list-style: none;
 }
 
 .links-topo a {
@@ -39,11 +41,70 @@ header{
 }
 /* FIM AJUSTE CABEÇALHO DO SITE */
 
+/* INÍCIO CONTEÚDO PRINCIPAL */
 main .recepcao {
-  background-image: url(../assets/img/recepcao2.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   width: 100vw;
-  height: 100vh;
+  height: 92vh;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  background-size: cover;
+  text-transform: uppercase;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: space-evenly;
+  background-image: url(../assets/img/recepcao.png);
 }
+
+.recepcao div {
+  max-width: 1024px;
+}
+
+.recepcao h1 {
+  width: 30vw;
+  height: 45vh;
+  color: #fff;
+  font-weight: 300;
+  font-size: 2.8rem;
+}
+/* FECHANDO CONTEÚDO PRINCIPAL */
+
+/* INÍCO CONTEÚDO SOBRE */
+#sobre {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1024px;
+  flex-direction: column;
+}
+
+.sobre-titulo {
+   text-align: center;
+   font-size: 1.2rem;
+   padding: 30px 30px 0px 30px;
+   color: gray;
+}
+
+.sobre-titulo p {
+  padding: 30px;
+}
+
+.sobre-lista {
+  color: gray;
+  /* margin: 0 auto; */
+}
+
+.sobre-lista h2, .sobre-lista ul {
+  float: right;
+  margin-top: 30px;
+}
+
+.sobre-lista ul {
+  padding: 20px;
+  margin-left: 20px;
+}
+
+.sobre-lista h2 {
+  font-weight: normal;
+}
+
+
