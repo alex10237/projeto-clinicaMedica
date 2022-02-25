@@ -39,6 +39,10 @@ header{
   color: #fff;
   text-decoration: none;
 }
+
+.links-topo a:hover {
+  color:#0d6e71;
+}
 /* FIM AJUSTE CABEÇALHO DO SITE */
 
 /* INÍCIO CONTEÚDO PRINCIPAL */
