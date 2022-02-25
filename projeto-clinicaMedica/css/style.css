@@ -21,11 +21,6 @@ header{
   justify-content: space-between;
 }
 
-.links-topo {
-  padding: 10px;
-  margin-left: 15px;
-}
-
 .links-topo ul {
   display: flex;
 }
@@ -46,17 +41,14 @@ header{
 /* FIM AJUSTE CABEÇALHO DO SITE */
 
 /* INÍCIO CONTEÚDO PRINCIPAL */
-main .recepcao {
+main .recepcao  {
   width: 100vw;
   height: 92vh;
   display: flex;
-  margin: 0 auto;
   align-items: center;
   background-size: cover;
-  text-transform: uppercase;
-  background-position: center;
   background-repeat: no-repeat;
-  justify-content: space-evenly;
+  justify-content: space-around;
   background-image: url(../assets/img/recepcao.png);
 }
 
@@ -65,11 +57,10 @@ main .recepcao {
 }
 
 .recepcao h1 {
-  width: 30vw;
-  height: 45vh;
   color: #fff;
   font-weight: 300;
   font-size: 2.8rem;
+  text-transform: uppercase;
 }
 /* FECHANDO CONTEÚDO PRINCIPAL */
 
@@ -90,6 +81,8 @@ main .recepcao {
 
 .sobre-titulo p {
   padding: 30px;
+  width: 700px;
+  margin: 0 auto;
 }
 
 .sobre-lista {
@@ -128,6 +121,11 @@ main .recepcao {
   text-align: center;
   flex-direction: column;
   padding: 30px 30px 30px 30px;
+}
+
+.titulo-especialidades p {
+  width: 500px;
+  margin: 10px auto;
 }
 
 .cards {
@@ -181,10 +179,19 @@ main .recepcao {
 }
 
 .contato-content {
-  margin: 0 auto;
+  margin: 25px auto;
   max-width: 1024px;
   text-align: center;
   line-height: 2.0rem;
+}
+
+.contato-content p {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.contato-content p:last-child {
+  width: 590px;
 }
 
 iframe {
@@ -205,3 +212,135 @@ iframe {
   background-color: #0d6e71;
 }
 /* FIM RODAPÉ */
+
+/* RESPONSIVO (MAX-WIDTH 425PX) */
+@media (min-width: 320px) and (max-width: 425px) {
+#topo {
+  height: 12vh;
+  flex-direction: column;
+}
+
+.logo-topo img{
+  height: 70px;
+}
+
+.links-topo {
+  width: 95%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-top: 1px solid rgba(13, 110, 113, 0.3);
+}
+
+.links-topo ul li {
+  padding: 0 20px;
+}
+
+.links-topo a {
+  font-size: 0.75rem;
+}
+
+
+main .recepcao {
+  height: 200px;
+}
+
+main .recepcao h1 {
+  font-size: 1.5rem;
+}
+
+.sobre-titulo{
+  font-size: 1.0rem;
+}
+
+.sobre-titulo h2 {
+  padding:25px 0 15px 0;
+}
+
+.sobre-titulo p {
+  padding: 0;
+  width: 380px;
+  margin: 0 auto;
+}
+
+.sobre-lista {
+  padding-top: 40px;
+  font-size: 1.0rem;
+}
+
+.sobre-lista img {
+  display: none;
+}
+
+.sobre-lista h2 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.titulo-especialidades {
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+.titulo-especialidades h3 {
+  padding-bottom: 10px;
+}
+
+.titulo-especialidades p {
+  font-size: 1.0rem;
+  width: 400px;
+}
+
+.cards {
+  flex-direction: column;
+}
+
+.card {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.contato-content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.contato-content p {
+  line-height: normal;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.contato-content p:last-child {
+  width: 375px;
+}
+
+.footer div p {
+  width: 400px;
+}
+
+
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  main .recepcao {
+    height: 300px;
+  }
+
+  .logo-topo img {
+    height: 70px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  main .recepcao {
+    height: 400px;
+  }
+}
+
+@media (max-width > 1024px) {
+  main .recepcao {
+    height: 500px;
+  }
+}
