@@ -215,13 +215,14 @@ iframe {
 
 /* RESPONSIVO (MAX-WIDTH 425PX) */
 @media (min-width: 320px) and (max-width: 425px) {  
-#topo {
+
+  #topo {
   height: 12vh;
   flex-direction: column;
 }
 
 .logo-topo img{
-  height: 70px;
+  height: 60px;
 }
 
 .links-topo {
@@ -324,13 +325,28 @@ main .recepcao h1 {
 /* FIM RESPONSIVO (MAX-WIDTH 425PX) */
 
 @media (min-width: 426px) and (max-width: 768px) {
-  main .recepcao {
+main .recepcao {
     height: 300px;
-  }
+}
 
-  .logo-topo img {
+.logo-topo img {
     height: 70px;
-  }
+}
+
+.sobre-lista img {
+  display: none;
+}
+
+.cards {
+  flex-flow: row wrap;
+}
+
+.card {
+  width: 40%;
+  margin: 20px auto;
+}
+
+
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
