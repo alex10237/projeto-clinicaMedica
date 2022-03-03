@@ -217,7 +217,7 @@ iframe {
 @media (min-width: 320px) and (max-width: 425px) {  
 
   #topo {
-  height: 12vh;
+  height: 15vh;
   flex-direction: column;
 }
 
@@ -387,11 +387,12 @@ main .recepcao {
 
 .lista-pag-especialidades li a{
   color: gray;
+  font-weight: bold;
   text-decoration: none;
   border-bottom: 2px solid #00cad1;
 }
 
-#ortopedia {
+#ortopedia, #pediatria, #geriatria, #psicologia, #fisioterapia {
   margin: auto;
   max-width: 1024px;
 }
@@ -409,7 +410,7 @@ main .recepcao {
 }
 
 .tabela-texto p {
-  width: 50%;
+  width: 53%;
   text-align: center;
 }
 
@@ -418,17 +419,39 @@ main .recepcao {
 }
 
 .tabela-img img {
-  width: 40%;
+  width: 308px;
+  height: 213px; 
 }
 
 .tabela-img table {
-  width: 60%;
-  line-height: 35px;
+  width: 70%;
   border-spacing: 0;
 }
+
 .tabela-img table th {
   padding: 5px;
   color: #fff;
   text-align: left;
+  line-height: 30px;
   background: #00cad1;
+}
+
+.tabela-img  tbody tr td {
+  padding: 5px;
+}
+
+.tabela-img table tbody tr:nth-of-type(2n+1) {
+  background-color: #ccc;
+}
+
+.tabela-img table tbody tr:nth-of-type(2n+2) {
+  background-color: #eee;
+}
+
+#fisioterapia img {
+  height: 300px;
+}
+
+.tabela-img:last-of-type {
+  margin-bottom: 50px;
 }
