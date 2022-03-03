@@ -432,6 +432,10 @@ main .recepcao h1 {
   justify-content: space-around;
 }
 
+.tabela-texto p {
+  width: 65%;
+}
+
 .tabela-img img{
   display: none;
 }
@@ -445,10 +449,6 @@ main .recepcao h1 {
   height: 25vh;
 }
 
-.tabela-img table tr td::selection,
-.tabela-img table tr th::selection {
-  width: 12px;
-}
 
 }
 /* FIM RESPONSIVO (MAX-WIDTH 425PX) */
@@ -475,6 +475,21 @@ main .recepcao {
   width: 40%;
   margin: 20px auto;
 }
+
+.tabela-img img {
+  display: none;
+}
+
+.tabela-img {
+  justify-content: center;
+}
+
+.tabela-img table {
+  width: 90vw;
+  height: 25vh;
+}
+
+
 }
 /* FIM RESPONSIVO (MIN-WIDTH: 426px) and (MAX-WIDTH: 768px) */
 
@@ -483,6 +498,14 @@ main .recepcao {
   main .recepcao {
     height: 400px;
   }
+
+.tabela-img {
+  justify-content: center;
+}
+
+.tabela-img table {
+  width: 60vw;
+}
 }
 /* FIM RESPONSIVO (MIN-WIDTH: 768px) and (MAX-WIDTH: 1024px) */
 
