@@ -200,6 +200,110 @@ iframe {
 }
 /* FIM CONTEÚDO CONTATO */
 
+/* INÍCIO STILO PÁGINA ESPECIALIDADES.HTML */
+
+/* TOPO DA PÁGINA ESPECIALIDADES.HTML (LINKS DE NAV. E H2) */
+.pag-especialidades h2 {
+  color: gray;
+  text-align: center;
+}
+
+.pag-especialidades nav {
+  display: flex;
+  justify-content: center;
+}
+
+.lista-pag-especialidades {
+  width: 40%;
+  margin: 30px;
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+.lista-pag-especialidades li a {
+  color: gray;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid #00cad1;
+}
+
+/* IDs DAS ESPECIALIDADES */
+#ortopedia,
+#pediatria,
+#geriatria,
+#psicologia,
+#fisioterapia {
+  margin: auto;
+  max-width: 1024px;
+}
+
+/* TÍTULO DA ESPECIALIDADE E TEXTO */
+.tabela-texto {
+  color: gray;
+  display: flex;
+  margin: 40px auto;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tabela-texto h3 {
+  margin-bottom: 20px;
+}
+
+.tabela-texto p {
+  width: 53%;
+  text-align: center;
+}
+
+/* IMAGEM E TABELA DE HORÁRIOS DAS ESPECIALIDADES */
+.tabela-img {
+  display: flex;
+}
+
+.tabela-img img {
+  width: 308px;
+  height: 213px;
+}
+
+.tabela-img table {
+  width: 70%;
+  color: gray;
+  border-spacing: 0;
+}
+
+.tabela-img table th {
+  padding: 5px;
+  color: #fff;
+  text-align: left;
+  line-height: 30px;
+  background: #00cad1;
+}
+
+.tabela-img tbody tr td {
+  padding: 5px;
+}
+
+.tabela-img table tbody tr:nth-of-type(2n+1) {
+  background-color: #ccc;
+}
+
+.tabela-img table tbody tr:nth-of-type(2n+2) {
+  background-color: #eee;
+}
+
+/* ESTILIZAÇÃO ESPECIAL DA IMAGEM DE FISIOTERAPIA QUE TEM QUE SER MAIS ALTA QUE AS OUTRAS */
+#fisioterapia img {
+  height: 300px;
+}
+
+/* MARGIN BOTTOM NO FINAL DA ULTIMA TABELA USANDO PSEUDO SELETORES CSS */
+.tabela-img:last-of-type {
+  margin-bottom: 50px;
+}
+/* FIM STILO PÁGINA ESPECIALIDADES.HTML */
+
+
 /* INÍCIO RODAPÉ */
 .footer {
   color: #fff;
@@ -217,7 +321,7 @@ iframe {
 @media (min-width: 320px) and (max-width: 425px) {  
 
   #topo {
-  height: 15vh;
+  height: 12vh;
   flex-direction: column;
 }
 
@@ -320,6 +424,31 @@ main .recepcao h1 {
 .footer div p {
   width: 400px;
 }
+/* responsivo da página de especialidades */
+.lista-pag-especialidades {
+  width: 83%;
+  line-height: 30px;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.tabela-img img{
+  display: none;
+}
+
+.tabela-img {
+  justify-content: center;
+}
+
+.tabela-img table {
+  width: 100vw;
+  height: 25vh;
+}
+
+.tabela-img table tr td::selection,
+.tabela-img table tr th::selection {
+  width: 12px;
+}
 
 }
 /* FIM RESPONSIVO (MAX-WIDTH 425PX) */
@@ -367,91 +496,4 @@ main .recepcao {
 
 /* INÍCIO  CONTEÚDO PRINCIPAL DA PÁGINA DE ESPECIALIDADES*/
 
-.pag-especialidades h2 {
-  color: gray;
-  text-align: center;
-}
 
-.pag-especialidades nav {
-  display: flex;
-  justify-content: center;
-}
-
-.lista-pag-especialidades {
-  width: 40%;
-  margin: 30px;
-  display: flex;
-  list-style: none;
-  justify-content: space-evenly;
-}
-
-.lista-pag-especialidades li a{
-  color: gray;
-  font-weight: bold;
-  text-decoration: none;
-  border-bottom: 2px solid #00cad1;
-}
-
-#ortopedia, #pediatria, #geriatria, #psicologia, #fisioterapia {
-  margin: auto;
-  max-width: 1024px;
-}
-
-.tabela-texto {
-  color: gray;
-  display: flex;
-  margin: 40px auto;
-  align-items: center;
-  flex-direction: column;
-}
-
-.tabela-texto h3 {
-  margin-bottom: 20px;
-}
-
-.tabela-texto p {
-  width: 53%;
-  text-align: center;
-}
-
-.tabela-img {
-  display: flex;
-}
-
-.tabela-img img {
-  width: 308px;
-  height: 213px; 
-}
-
-.tabela-img table {
-  width: 70%;
-  border-spacing: 0;
-}
-
-.tabela-img table th {
-  padding: 5px;
-  color: #fff;
-  text-align: left;
-  line-height: 30px;
-  background: #00cad1;
-}
-
-.tabela-img  tbody tr td {
-  padding: 5px;
-}
-
-.tabela-img table tbody tr:nth-of-type(2n+1) {
-  background-color: #ccc;
-}
-
-.tabela-img table tbody tr:nth-of-type(2n+2) {
-  background-color: #eee;
-}
-
-#fisioterapia img {
-  height: 300px;
-}
-
-.tabela-img:last-of-type {
-  margin-bottom: 50px;
-}
