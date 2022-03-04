@@ -320,8 +320,12 @@ iframe {
 /* RESPONSIVO (MAX-WIDTH 425PX) */
 @media (min-width: 320px) and (max-width: 425px) {  
 
+body {
+  overflow: auto;
+}  
+
   #topo {
-  height: 12vh;
+  height: 15vh;
   flex-direction: column;
 }
 
@@ -426,7 +430,7 @@ main .recepcao h1 {
 }
 /* responsivo da página de especialidades */
 .lista-pag-especialidades {
-  width: 83%;
+  width: 79%;
   line-height: 30px;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -489,6 +493,13 @@ main .recepcao {
   height: 25vh;
 }
 
+.lista-pag-especialidades {
+  width: 75%;
+  line-height: 30px;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
 
 }
 /* FIM RESPONSIVO (MIN-WIDTH: 426px) and (MAX-WIDTH: 768px) */
@@ -504,8 +515,16 @@ main .recepcao {
 }
 
 .tabela-img table {
-  width: 60vw;
+  width: 90vw;
 }
+
+.lista-pag-especialidades {
+  width: 80%;
+  line-height: 30px;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
 }
 /* FIM RESPONSIVO (MIN-WIDTH: 768px) and (MAX-WIDTH: 1024px) */
 
